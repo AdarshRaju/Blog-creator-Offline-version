@@ -1,0 +1,131 @@
+/* The main tags start from here */
+
+body{
+    background-color: rgb(116, 173, 185);
+    background-image: url("images/DD-Forest-Background-60012-Preview.jpg");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    font-family:nunito;
+    margin:0px;
+    display: grid;
+    /* padding-right: calc(100vw - 100%); */
+    padding-right: 0;
+    width: calc(100vw - 100%);
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    overflow-x:auto;
+    /* filter:blur(2px); */
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("images/sephia forest.jpg");
+    background-image: url("images/DD-Forest-Background-60012-Preview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(40, 120, 112);
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    background-color: beige;
+    color:brown;
+    /* background-image: url("images/camouflage-seamless-pattern-for-army-and-military-free-vector.jpg");
+    background-image: url("images/sephia forest.jpg"); */
+    /* position: absolute;
+    bottom:0;s
+    left: 40vw; */
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    width:100vw;
+    height: 10vh;
+    margin-top: 12vh;
+    /* margin-bottom: 0; */
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin-top: 0%;
+    display: flex;
+    position:relative;
+    /* flex-direction: column; */
+    justify-content: flex-start;
+    /* flex-grow: 50%; */
+    /* width: 100%; */
+    
+    
+}
+
+h1 {
+    color: rgb(72, 18, 18);
+    font-size: 50px;
+    /* background-color: rgb(111, 162, 138); */
+    /* justify-content: left; */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+aside {
+    flex-basis: 50vw;
+}
+
+nav {
+    margin-bottom: 5px;
+    margin-left: 15px;
+    display: flex;
+    position: relative;
+    /* width: 120px; */
+    justify-content: space-between;
+}
+
+button {
+    margin: 15px;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    background-color: rgb(213, 239, 198);
+}
+
+article {
+    position: relative;
+    padding: 2px;
+    padding-bottom: 7px;
+    border-radius: 7px;
+}
+
+article:hover {
+    background-color: rgba(53, 160, 160, 0.574);
+}
+
+@media (max-width: 600px) {
+    aside {
+        display: none;
+    }
+
+    #article_displayWindow {
+        align-self: center;
+        align-content:center ;
+        justify-self:center;
+        margin-left: 10vw;
+    }
+
+    #MaineditBtns {
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

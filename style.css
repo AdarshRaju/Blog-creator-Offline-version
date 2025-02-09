@@ -1,0 +1,162 @@
+
+/* The main tags start from here */
+
+body{
+    background-color: rgb(116, 173, 185);
+    font-family:sans-serif;
+    margin:0px;
+    display: grid;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(40, 120, 112);
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+    background-color: beige;
+    /* position: absolute;
+    bottom:0;
+    left: 40vw; */
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
+    margin-top: 17vh;
+}
+
+main {
+    margin-top: 0%;
+    display: flex;
+    justify-content: flex-start;
+    flex-grow: 50%;
+    
+}
+
+h1 {
+    color: rgb(153, 57, 57);
+    background-color: rgb(111, 162, 138);
+    /* justify-content: left; */
+    border-radius: 5px;
+    padding: 5px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+aside {
+    flex-basis: 15vw;
+}
+
+nav {
+    margin-bottom: 5px;
+}
+
+button {
+    margin: 15px;
+    padding: 5px 15px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+article {
+    position: relative;
+    padding-bottom: 7px;
+}
+
+article:hover {
+    .editHover {
+        display:flex;
+        position:absolute;
+        bottom: 2px;
+        right: 5px;
+    }
+}
+
+/* All the classes and ids start from here */
+
+#blogHeading {
+    align-self: center;
+}
+
+#blogPreviewWindow {
+    border: black 10px solid;
+    border-width: 2px;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+#addRemovePosts {
+    /* align-self: baseline;
+    align-content: center; */
+    display:flex;
+    flex-direction: column;
+    /* display: inline-block; */
+    padding-top: 10px;
+}
+
+#article_displayWindow {
+    align-self: flex-start;
+    flex-basis: 70vw;
+}
+
+
+
+.mainNavLinks {
+    color: rgb(227, 222, 230);
+}
+
+.mainNavLinks:hover{
+    color:aquamarine;
+}
+
+#editBtns {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+
+
+#footerText {
+    padding-left: 15px;
+    padding-right: 15px;
+    flex-basis: 100vw;
+}
+
+#blogTitleInput#blogContentInput {
+    padding: 10px;
+}
+
+.articleHeading, .articleStartPara {
+    /* height: 100px; */
+    width: 70vw;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.editHover {
+    display:none;
+}
+
+.editBtn {
+    margin-right: 2px;
+}
+
+.deleteBtn {
+    margin-left: 2px;
+}
+

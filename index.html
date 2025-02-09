@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bloggin">
+    <meta charset="utf-8">
+    <title>Blogging project</title>
+
+    <!-- External CSS fonts linked below -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- <link href="style.css" rel="stylesheet" /> -->
+    <link href="maintags.css" rel="stylesheet" />
+    <link href="classid.css" rel="stylesheet" />
+    <header>
+        <h1 id="blogHeading">Blogs and Notes Manager</h1>
+        <nav>
+            <!-- This is generally the section for home, about and contact -->
+            <div id="mainnavitems">
+                <div class="mainNavLinks" id="blogspage">Blogs</div>
+                <div class="mainNavLinks" id="contactpage">Contact</div>
+            </div>
+            <div id="searchbarcontainer">
+                <form id="searchbarform">
+                    <label for="searchbar" id="searchbarlabel">Search Blogs:</label>
+                    <input type="search" name="searchbar" id="searchbar" placeholder="search...">
+                    <button type="submit" id="searchsubmitbtn"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <!-- The searchhover is below -->
+            <div id="searchhovercontainer">
+
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        
+        <div id="mainarticlescontiner">
+        <!-- <video autoplay muted loop id="backgroundvideo">
+            <source src="F:\Videos\Oslob whalesharks\GH010028.mp4" type="video/mp4">
+        </video> -->
+        <!-- Need to make the aside and article_display_window to align along a row through CSS -->
+        <aside>
+            <h6 id="asideheading">Table of Blogs</h6>
+            <ul id="asidelist">
+
+            </ul>
+        </aside>
+        <!-- The article_displayWindow has both the database window and input forms in it -->
+        <div id="article_displayWindow">
+            <h2 id="articleWindowHeading">Scroll to see blogs created below</h2>
+            <div id="blogPreviewWindow">
+                
+
+                <!-- Use display:none on the article below, grab it and use it as template in JS -->
+                <article class="articlestoragemains" id="article_0">
+            
+                    <h2 class="articleHeading"> </h2>
+                    <p class="articleStartPara"></p>
+                
+                <!-- The edit/del buttons for each articles below -->
+                    <div class="editHover">
+                        <div class="editBtns">Edit</div>&#124;
+                        <div class="deleteBtns">Delete</div>
+                    </div>
+            
+                </article >
+        
+            <!-- End of blogPreviewWindow below -->
+            </div>
+            <div id="pagenocontainer">
+                <label for="ipp">Items per page: </label>
+                <select name="ipp" id="ipp">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="50">50</option>
+                </select>
+              <div id="jump2first" title="Jump to the first page">&lt;&lt;</div>
+              <div id="gotoprevpage" title="Go to the previous page">&lt;</div>
+              <div id="pagenoliner">
+                
+
+                
+
+
+              </div>
+              <div id="ellipsiscontainer">...</div>
+              <div id="gotonextpage" title="Go to the next page">&gt;</div>
+              <div id="jump2last" title="Jump to the last page">&gt;&gt;</div>
+            </div>
+
+            <!-- <div id="blogTitleInput" contenteditable="true"></div>
+            <div id="blogContentInput" contenteditable="true"></div> -->
+
+            <form id="mainInputForm">
+                <fieldset id="addRemovePosts">
+                    <legend>Create or Edit a Blog:</legend>
+                    <div id="edititems">
+                        <button id="formattingtips">Formatting Tips</button>
+                        </br>
+                        <button id="bold" title="bold selected text"><b>B</b></button>
+                        <button id="italics" title="italics selected text"><i>I</i></button>
+                        <button id="underline" title="underline selected text"><u>U</u></button>
+                        <button id="clearformatting">Clear All Formatting</button>
+                    </div>
+                    <label for="blogTitleInput">Blog Title:</label>
+                    <input id="blogTitleInput" name="blogTitleInput" placeholder="Write a title for your blog.."><br><br>
+                    <label for="blogContentInput">Blog Content:</label>
+                    <!-- <div id="blogContentInput" contenteditable="true"></div> -->
+                    <textarea id="blogContentInput" name="blogContentInput"placeholder ="Write your blog here.."></textarea>
+                    <div id="MaineditBtns">
+                        <button id="createNewPostBtn" name="createNewPostBtn">Create New Post</button>
+                        <button id="clearBtn" name="clearBtn">Clear</button>
+                    </div>
+                </fieldset>
+            </form>
+
+
+        <!-- End of article_displayWindow below -->
+        </div>
+        
+        <!-- End of mainarticlescontiner below -->
+        </div>
+
+
+
+
+
+        <!-- The articlesdisplaypage is below -->
+
+        <div id="articlesdisplaypage">
+            <h2 id="articleindisplaypageheading"></h2>
+            <p id="articleindisplaypagecontent"></p>
+        </div>
+
+
+
+
+        <!-- The search display page is below -->
+        <div id="searchdisplaypage">
+            <h2 id="searchpageheading">Search Results</h2>
+            <div id="searchresultscontainer"></div>
+        </div>
+
+
+        
+
+
+
+        <!-- The contact page is below -->
+        <div id="contactpagemaincontainer">
+            <h2 id="contactheading">Contact</h2>
+            <h3>Adarsh Raju</h3>
+            <h4>Full Stack Website Developer</h4>
+            <p>Adarsh Raju is a full stack website developer with extensive experience in designing web applications.</p>
+                <p>He can make engaging websites for your business needs.
+                He knows the ins-and-outs of Search Engine Optimization and Internet Security Protocols, so you can be rest assured that your website's rank will be put in the front and you don't have to worry about security.
+            </p>
+            
+            <p>Email: <a href="mailto:adarsh_rg5@yahoo.co.in">adarsh_rg5@yahoo.co.in</a></p>
+            <p>Tel: <a href="tel:+61450059324">+61 450 059 324</a></p>
+        </div>
+
+    </main>
+
+    <!-- The confirmation boxes are below -->
+    <div id="filterscreen"></div>
+        <div id="deleteconfirmationbox">
+            <span id="delclosebutton">&times</span>
+            <div id="deleteinnerbox">
+                
+                <div style="color:red">Are you sure you want to delete this blog?</div>
+                <button id="delyes">Yes</button>
+                <button id="delno">No</button>
+            </div>
+        </div>
+
+        <div id="clearconfirmationbox">
+            <span id="clearclosebutton">&times</span>
+            <div id="clearinnerbox">
+                
+                <div>Are you sure you want to clear?</div>
+                <button id="clearyes">Yes</button>
+                <button id="clearno">No</button>
+            </div>
+        </div>
+
+        <div id="formattinginformationbox">
+            <span id="formatinfoclosebutton">&times</span>
+            <div id="formatinfoinnerbox">
+                <h3>Formatting text</h3>
+                <div>To format a text, wrap the text in between: </br></br>
+                    &lt; b &gt; text &lt;/ b &gt; for <b>bold</b></br>
+                    &lt; i &gt; text &lt;/ i &gt; for <i>italics</i></br>
+                    &lt; u &gt; text &lt;/ u &gt; for <u>underline</u> </br></br>
+                    Or highlight the text with the mouse and click the B, I or U buttons to insert the tags.
+                </div>
+               
+            </div>
+        </div>
+
+
+
+    
+    <footer>
+        <p id="footerText">Created by Adarsh Raju &copy;</p>
+        
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.js" integrity="sha512-IRojSjXjCMZiTCPAimTbaT6XJW+6DCHZEAldmwrqWQ8hMGdy7wJxSaf11t/M6sM/Jjqz6RZ0vDrC6FBf2QfLUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

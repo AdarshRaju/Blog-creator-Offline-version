@@ -1,0 +1,526 @@
+/* All the classes and ids start from here */
+
+:root{
+    --verylightgreen: rgb(221, 240, 227);
+}
+
+#blogHeading {
+    display: inline-block;
+    align-self: center;
+    text-shadow: -5px -10px 0px rgba(0, 0, 0, 0.05);
+    /* background-image: url("images/camouflage-seamless-pattern-for-army-and-military-free-vector.jpg");
+    background-image: url("images/DD-Forest-Background-60012-Preview.jpg"); */
+    /* background-image: url("images/sephia forest.jpg"); */
+    -webkit-background-clip: text;
+    color: #0a585a;
+    background-clip: text;
+}
+
+#mainarticlescontiner{
+    display: flex;
+}
+
+#blogPreviewWindow {
+    border: black 10px solid;
+    border-width: 2px;
+    margin: 5px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    max-height: 300px;
+    min-height: 50px;
+    overflow-y: auto;
+    /* overflow-x: hidden; */
+    /* width: 100%; */
+    /* margin-right: 0;
+    padding-right: 0; */
+}
+
+/* .articlestoragemains {
+    width: 100%;
+} */
+
+#asideheading {
+    font-size: 18px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#addRemovePosts {
+    /* align-self: baseline;
+    align-content: center; */
+    display:flex;
+    flex-direction: column;
+    /* display: inline-block; */
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+#mainInputForm {
+    /* align-self: baseline;
+    align-content: center; */
+    display:flex;
+    flex-direction: column;
+    /* display: inline-block; */
+    padding-top: 50px;
+}
+
+#article_displayWindow {
+    align-self: flex-start;
+    flex-basis: 70vw;
+    /* display: flex; */
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.mainNavLinks {
+    color: rgb(227, 222, 230);
+}
+
+.mainNavLinks:hover{
+    color:aquamarine;
+    cursor: pointer;
+}
+
+#editBtns {
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+
+
+
+#footerText {
+    padding-left: 15px;
+    padding-right: 15px; 
+    /* flex-basis: 100vw; */
+    word-break: break-all;
+    justify-self: center;
+    align-self: center;
+    text-shadow: rgba(0, 0, 0, 0.401) 1px 1px 1px;
+
+}
+
+#blogTitleInput#blogContentInput {
+    padding: 10px;
+}
+
+.articleHeading, .articleStartPara {
+    /* height: 100px; */
+    width: 100%;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.articleHeading {
+    cursor: pointer;
+}
+
+
+.editHover {
+    display:none;
+}
+
+.editBtn {
+    margin-right: 2px;
+}
+
+.deleteBtn {
+    margin-left: 2px;
+}
+
+article:hover .editHover {
+        display:flex;
+        position:absolute;
+        bottom: 2px;
+        right: 5px;
+}
+
+
+
+
+/* Can use the below code to add video background */
+#backgroundvideo {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+
+
+
+
+#article_0 {
+    color:red;
+    display:none;
+}
+
+
+
+/* Items related to text inputs for the blogs are below */
+#blogTitleInput {
+    width: 35vw;
+    background-color: var(--verylightgreen);
+}
+
+#blogContentInput {
+    width: 60vw;
+    height: 20vh;
+    background-color: var(--verylightgreen); 
+}
+
+#edititems{
+/* display:none; */
+}
+
+
+
+
+
+
+#articleWindowHeading, #contactheading, #articleindisplaypageheading, #searchpageheading {
+
+    align-self: center;
+    text-decoration: none;
+    font-weight:900;
+    font-size:30px;
+    color: rgb(66, 13, 10);
+    text-shadow: rgba(0, 0, 0, 0.34) 2px 2px 2px;
+}
+
+.editBtns, .deleteBtns {
+    color:rgb(204, 223, 223);
+}
+
+.editBtns:hover, .deleteBtns:hover {
+    color:rgb(75, 70, 174);
+    cursor:pointer;
+}
+
+#asidelist {
+    padding-left: 15px;
+    margin-top: 8px;
+    height: 500px;
+    overflow-y: auto;
+}
+.asideitems {
+    width: 15vw;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    margin-left:0;
+}
+
+
+
+
+
+/* The section for the page numbers are below */
+
+
+#pagenocontainer {
+    display: flex;
+    width: 100%;
+    margin-left: 25px;
+    
+}
+
+#pagenoliner{
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    max-width: 70%;
+    margin: auto 5px;
+}
+
+#ellipsiscontainer{
+    display: none;
+}
+
+.pagenos {
+    overflow: hidden;
+    color:rgb(1, 15, 142);
+    cursor: pointer;
+}
+
+.selectedpage{
+    color: black;
+    text-decoration: underline;
+}
+
+#jump2first, #jump2last {
+    cursor: pointer;
+}
+
+#gotoprevpage {
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#gotonextpage {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+#ipp {
+    margin-right: 10px;
+    background-color: var(--verylightgreen);
+}
+
+
+
+/* The section for confirmation boxes are below */
+
+#deleteconfirmationbox, #clearconfirmationbox, #formattinginformationbox {
+    display: none;
+    position: fixed;
+    pointer-events: auto;
+    filter: blur();
+    top: 45vh;
+    left: 40vw;
+    z-index: 2;
+    background-color: beige;
+    padding: 0.5em;
+    border-radius: 15px;
+    /* padding-top: 0.25em; */
+}
+
+#formattinginformationbox {
+    /* display: block; */
+    top: 35vh;
+    left: 30vw;
+}
+
+#deleteinnerbox, #clearinnerbox, #formatinfoinnerbox  {
+    background-color: aqua;
+    padding: 0.15em;
+    border-radius: 10px;
+    filter: blur();
+}
+
+#formatinfoinnerbox  {
+    padding: 15px;
+    padding-bottom: 50px;
+}
+
+#delclosebutton, #clearclosebutton, #formatinfoclosebutton {
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    cursor: pointer;
+}
+
+#delyes{
+    margin-left: 75px;
+}
+
+#clearyes {
+    margin-left: 45px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#filterscreen {
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    z-index: 1;
+    /* background-color: red; */
+    /* filter:blur(2px); */
+}
+
+.disableuserinteractions {
+    pointer-events: none;
+    user-select: none;
+    filter: blur(2px);
+}
+
+
+
+
+
+
+/* The contact page container items are below */
+#contactpagemaincontainer {
+    display: none;
+    flex-direction: column;
+    margin-left: 200px;
+    max-width: 750px;
+}
+
+#contactheading {
+    letter-spacing: 2px;
+    align-self: center;
+}
+
+
+
+
+/* The navigation items are below */
+
+#mainnavitems {
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#searchbarcontainer{
+    display: flex;
+    justify-content: start;
+}
+
+#searchsubmitbtn{
+    margin-left: 0;
+    /* border-left: 0; */
+    /* padding-left: 0; */
+}
+
+#searchbarlabel{
+    color: white;
+}
+
+#searchbar{
+    margin-right: 0;
+    border-right: 0;
+    padding: 5px;
+}
+
+
+
+
+/* The items related to the article display page are below*/
+
+#articlesdisplaypage{
+    display:none;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* white-space:unset; */
+}
+#articleindisplaypageheading{
+    justify-self: center;
+    align-self: center;
+    /* width: 100%; */
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#articleindisplaypagecontent{
+    font-family:nunito;
+    color:aliceblue;
+    margin: 10px 15px;
+    justify-self: center;
+    align-self: center;
+    max-width: 600px;
+    text-indent: 10px;
+    letter-spacing: 5px;
+    /* text-align: justify; */
+    /* word-wrap: break-word; */
+    white-space: pre-wrap;
+    
+}
+
+#articleindisplaypagecontent::first-letter{
+    font-size: 50px;
+    color:rgb(129, 27, 21);
+    color: #0a585a;
+    font-weight: bolder;
+    font-family: serif;
+}
+
+#articleindisplaypagecontent::first-line{
+    margin-left:-50px;
+}
+
+
+/* Items related to the searchdisplay page is below */
+
+#searchdisplaypage{
+    display: none;
+    flex-direction: column;
+    margin-left: 200px;
+    max-width: 750px;
+}
+
+#searchpageheading{
+    align-self: center;
+    justify-self: center;
+}
+
+.searchh3{
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.searchp{
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+
+
+
+
+/* Items related to search hover container is below */
+
+#searchhovercontainer{
+    display: none;
+    position: absolute;
+    top: 45px;
+    right: 15px;
+    width: 500px;
+    max-height: 500px;
+    overflow-y: auto;
+    z-index: 1;
+    background-color: aliceblue;
+}
+
+.searchhinbar {
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+.searchpinbar{
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}
+
+/* Responsive UI */
+
+@media (max-width: 600px) {
+    #searchdisplaypage{
+        margin-left: 50px;
+    }
+
+    #contactpagemaincontainer{
+        margin-left: 50px;
+    }
+}
