@@ -240,7 +240,7 @@ article:hover .editHover {
 #pagenoliner{
     white-space: nowrap;
     text-overflow:ellipsis;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     position: relative;
     max-width: 70%;
@@ -252,6 +252,7 @@ article:hover .editHover {
 }
 
 .pagenos {
+    min-width: 15px;
     overflow: hidden;
     color:rgb(1, 15, 142);
     cursor: pointer;
