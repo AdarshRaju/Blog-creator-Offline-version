@@ -8,3 +8,5 @@ The following features are present in the website:
 
 
 The website is not connected to any online database and hence the contents will be cleared at the end of each session.
+
+The link to the live page: https://adarshraju.github.io/Blog-creator-Offline-version/
